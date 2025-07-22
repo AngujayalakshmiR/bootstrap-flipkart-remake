@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flipkart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .search-bar {
+      background-color: #E3F2FD;
+      color: gray;
+    }
+    .carousel-item img {
+      height: 280px;
+      object-fit: cover;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+    }
+    .category-box img, .product-box img, .row-cols-2 img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #000;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer i {
+      margin: 0 10px;
+      color: white;
+    }
+    .arrow-circle {
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      padding: 8px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      width: 5%;
+    }
+    .custom-gap {
+      gap: 65px;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4 position-sticky top-0 z-3">
+  <div class="container-fluid">
+    <a class="navbar-brand col-2" href="#">
+      <img src="logo.svg" alt="Logo" width="100" height="40">
+    </a>
+    <div class="col-4">
+      <input type="text" class="form-control search-bar" placeholder="Search for products">
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-around gap-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <i class="far fa-user me-2"></i> Login
+      </a>
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-around gap-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <i class="fa fa-briefcase me-2"></i> Cart
+      </a>
+    </div>
+    <div class="col-2 d-flex align-items-center justify-content-around gap-2">
+      <a href="#" class="text-decoration-none text-dark">
+        <i class="far fa-star me-2"></i> Best Seller
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="container my-3 text-center">
+  <div class="d-flex justify-content-center flex-wrap custom-gap">
+    <a href="#" class="text-center text-decoration-none text-dark">
+      <img src="p1.webp" alt="Grocery" class="mb-1">
+      <div><b>Grocery</b></div>
+    </a>
+    <a href="#" class="text-center text-decoration-none text-dark">
+      <img src="p2.webp" alt="Mobiles" class="mb-1">
+      <div><b>Mobiles</b></div>
+    </a>
+    <a href="#" class="text-center text-decoration-none text-dark">
+      <img src="p3.webp" alt="Fashion" class="mb-1">
+      <div><b>Fashion</b></div>
+    </a>
+    <a href="#" class="text-center text-decoration-none text-dark">
+      <img src="p4.webp" alt="Electronics" class="mb-1">
+      <div><b>Electronics</b></div>
+    </a>
+    <a href="#" class="text-center text-decoration-none text-dark">
+      <img src="p5.webp" alt="Home" class="mb-1">
+      <div><b>Home & Furniture</b></div>
+    </a>
+    <a href="#" class="text-center text-decoration-none text-dark">
+      <img src="p6.webp" alt="Appliances" class="mb-1">
+      <div><b>Appliances</b></div>
+    </a>
+  </div>
+</div>
+<div id="mainCarousel" class="carousel slide my-3" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="banner1.webp" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="banner2.webp" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="banner3.webp" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container bg-white py-3 mb-4">
+  <h4 class="mb-3">Best Electronics</h4>
+  <div class="row row-cols-6 g-2">
+    <div class="col">
+      <img src="elec1.webp" class="img-fluid d-block mx-auto" style="height: 160px;">
+      <div class="text-center"><strong>Headphone</strong><br><small>High Bass Quality</small></div>
+    </div>
+    <div class="col">
+      <img src="elec2.webp" class="img-fluid d-block mx-auto" style="height: 160px;">
+      <div class="text-center"><strong>Camera</strong><br><small>DSLR Professional</small></div>
+    </div>
+    <div class="col">
+      <img src="elec3.webp" class="img-fluid d-block mx-auto" style="height: 160px;">
+      <div class="text-center"><strong>Smartphone</strong><br><small>Latest Model</small></div>
+    </div>
+    <div class="col">
+      <img src="elec4.webp" class="img-fluid d-block mx-auto" style="height: 160px;">
+      <div class="text-center"><strong>Bluetooth Speaker</strong><br><small>HD Sound</small></div>
+    </div>
+    <div class="col">
+      <img src="elec1.webp" class="img-fluid d-block mx-auto" style="height: 160px;">
+      <div class="text-center"><strong>Laptop</strong><br><small>i7 Processor</small></div>
+    </div>
+    <div class="col">
+      <img src="elec2.webp" class="img-fluid d-block mx-auto" style="height: 160px;">
+      <div class="text-center"><strong>Smartwatch</strong><br><small>Fitness Tracker</small></div>
+    </div>
+  </div>
+</div>
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="bg-white p-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5>Fashion Deals</h5>
+          <i class="fas fa-arrow-right arrow-circle"></i>
+        </div>
+        <div class="row row-cols-2 g-2">
+          <div class="col">
+            <img src="f1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Shirts</small></div>
+          </div>
+          <div class="col">
+            <img src="f1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Jeans</small></div>
+          </div>
+          <div class="col">
+            <img src="f1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Shoes</small></div>
+          </div>
+          <div class="col">
+            <img src="f1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Watches</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="bg-white p-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5>Home Essentials</h5>
+          <i class="fas fa-arrow-right arrow-circle"></i>
+        </div>
+        <div class="row row-cols-2 g-2">
+          <div class="col">
+            <img src="h1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Cookware</small></div>
+          </div>
+          <div class="col">
+            <img src="h1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Blankets</small></div>
+          </div>
+          <div class="col">
+            <img src="h1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Storage</small></div>
+          </div>
+          <div class="col">
+            <img src="h1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Decor</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="bg-white p-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5>Daily Essentials</h5>
+          <i class="fas fa-arrow-right arrow-circle"></i>
+        </div>
+        <div class="row row-cols-2 g-2">
+          <div class="col">
+            <img src="d1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Snacks</small></div>
+          </div>
+          <div class="col">
+            <img src="d1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Beverages</small></div>
+          </div>
+          <div class="col">
+            <img src="d1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Personal Care</small></div>
+          </div>
+          <div class="col">
+            <img src="d1.webp" class="img-fluid" style="height: 150px;border-radius: 15px;">
+            <div><small>Cleaning</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-youtube"></i>
+  </div>
+  <div class="mt-2">© 2024 Flipkart Style Clone. All Rights Reserved.</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
